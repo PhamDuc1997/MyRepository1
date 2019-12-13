@@ -1,14 +1,12 @@
 #include <stdio.h>
 int main(){
-	int x,rev=0,inv;
+	int x,inv,s=0;
 	printf("nhap vao so nguyen x\n");
 	scanf("%d",&x);
-	while(x>0){
+	for(;x>0;x/=10){
 		inv=x%10;
-		rev=rev*10+inv;
-		x/=10;
-	}printf("so dao nghich la %d",rev);
-	
-	
+		s+=inv;}
+	printf("tong cac chu so cua so nhap vao la %d\n",s);
 	return 0;
 }
+	
