@@ -7,10 +7,15 @@ int main(){
 	for(int i=0;i<n;++i){
 		printf("nhap so[%d]\n",i);
 		scanf("%d",&so[i]);
-	}for(int i=0;i<n;++i){
-		if(so[i]%2==1){
-			printf("so le trong day: %d\n",so[i]);
+	} 
+	for(int i=0;i<n;++i){
+		if(so[i]<0){
+			so[i]=0;
 		}
-	}printf("khong co so le\n");
+	}for(int i=0;i<n;++i){
+		printf("day so sau khi duoc thay the so am thanh 0 la\n");
+		printf(" so[%d]=%d\n",i,so[i]);
+	}
 	return 0;
 }
+	
